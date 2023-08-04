@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="AbstractScane.h" />
+    <ClInclude Include="AbstractScene.h" />
     <ClInclude Include="Bullet.h" />
     <ClInclude Include="BulletsSpawner.h" />
     <ClInclude Include="CharaBase.h" />

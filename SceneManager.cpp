@@ -1,7 +1,7 @@
 #include "SceneManager.h"
 
-AbstractScane* SceneManager::Update() {
-	AbstractScane* p = mScene->Update();
+AbstractScene* SceneManager::Update() {
+	AbstractScene* p = mScene->Update();
 	if (p != mScene) {
 		delete mScene;
 		mScene = p;

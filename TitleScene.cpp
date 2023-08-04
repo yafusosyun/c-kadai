@@ -1,6 +1,6 @@
 #include "TitleScene.h"
 #include "GameMainScene.h"
-AbstractScane* TitleScene::Update()
+AbstractScene* TitleScene::Update()
 {
 	//メニューカーソル移動処理
 	if (g_KeyFlg & PAD_INPUT_DOWN) {

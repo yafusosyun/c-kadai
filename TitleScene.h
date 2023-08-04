@@ -1,14 +1,14 @@
 #pragma once
-#include "AbstractScane.h"
+#include "AbstractScene.h"
 #include "DxLib.h"
-class TitleScene :public AbstractScane
+class TitleScene :public AbstractScene
 {
 private:
     int  cursor_num{};
-    static  int g_MenuNumber;
+    int g_MenuNumber;
     int cursorimg;
-    static int g_MenuY;
-    static  int g_TitleImage;
+    int g_MenuY;
+    int g_TitleImage;
 
     int g_OldKey;
     int g_NowKey;
@@ -18,7 +18,7 @@ public:
 
     virtual ~TitleScene() {};
 
-    virtual AbstractScane* Update() override;
+    virtual AbstractScene* Update() override;
 
     virtual void Draw() const override;
 

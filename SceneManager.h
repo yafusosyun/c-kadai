@@ -1,22 +1,22 @@
 #pragma once
-#include "AbstractScane.h"
+#include "AbstractScene.h"
 
 
 //ƒV[ƒ“‚ÌØ‚è‘Ö‚¦
-class SceneManager :public AbstractScane {
+class SceneManager :public AbstractScene {
 private:
-	AbstractScane* mScene;
+	AbstractScene* mScene;
 
 public:
 
-	SceneManager(AbstractScane* scene) : mScene(scene) {}
+	SceneManager(AbstractScene* scene) : mScene(scene) {}
 
 	~SceneManager() {
 		delete mScene;
 	}
 
 
-	AbstractScane* Update() override;
+	AbstractScene* Update() override;
 
 
 	void Draw() const override;
