@@ -1,7 +1,12 @@
 #pragma once
-#include "Bullet.h"
-class Player :
-    public Bullet
+#include "CharaBase.h"
+class Player : public CharaBase
 {
+public:
+	CharaBase* Update(int GameMainScene()) override;
+
+	CharaBase* Draw() override;
+
+	CharaBase* Hit() override;
 };
 

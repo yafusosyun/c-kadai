@@ -8,7 +8,7 @@ GameMainScene::~GameMainScene()
 {
 }
 
-AbstractScene* GameMainScene::Update()
+SceneBase* GameMainScene::Update()
 {
 	return this;
 }
