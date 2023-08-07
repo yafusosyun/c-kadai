@@ -1,7 +1,7 @@
 #pragma once
-#include "AbstractScene.h"
+#include "SceneBase.h"
 #include "DxLib.h"
-class TitleScene :public AbstractScene
+class TitleScene :public SceneBase
 {
 private:
     int  cursor_num{};
@@ -18,7 +18,7 @@ public:
 
     virtual ~TitleScene() {};
 
-    virtual AbstractScene* Update() override;
+    virtual SceneBase* Update() override;
 
     virtual void Draw() const override;
 

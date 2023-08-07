@@ -45,14 +45,14 @@
     <ClInclude Include="NwaySpawner.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="AbstractScene.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
     <ClInclude Include="SceneManager.h">
       <Filter>ソース ファイル\NewFilter1</Filter>
     </ClInclude>
     <ClInclude Include="TitleScene.h">
       <Filter>ソース ファイル\NewFilter1</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
