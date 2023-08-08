@@ -1,6 +1,7 @@
 #include "DxLib.h"
 #include"SceneManager.h"
 #include"TitleScene.h"
+#include "main.h"
 
 
 
@@ -15,6 +16,8 @@ int WINAPI WinMain(_In_ HINSTANCE ih, _In_opt_ HINSTANCE ioh, _In_ LPSTR il, _In
 	// ウィンドウモードで起動
 	(ChangeWindowMode(TRUE));
 
+	// ウインドウのサイズ
+	SetGraphMode(SCREEN_WIDTH, SCREEN_HEIGHT, 32); 
 
 	// DXライブラリの初期化
 	if (DxLib_Init() == -1)
