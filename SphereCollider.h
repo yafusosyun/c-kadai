@@ -2,9 +2,15 @@
 class SphereCollider
 {
 public:
-	void CheckCollision(class SphereCollider);
+	SphereCollider(int centerX, int centerY, int radius);
+	bool CheckCollision(const SphereCollider& otherCollider) const;
 	//ˆø”‚ÅSphereCollider‚ğó‚¯æ‚é
 	//SphereCollider“¯m‚Ì“–‚½‚è”»’è‚ğs‚¢“–‚½‚Á‚½‚©‚Ç‚¤‚©‚ğ•Ô‚·
+
+private:
+
+	int centerX;
+	int centerY;
 
 	int location;//’†SÀ•W
 	int radius;//”¼Œa
