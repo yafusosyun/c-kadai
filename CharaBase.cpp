@@ -17,7 +17,7 @@ void CharaBase::Update()
 
 void CharaBase::Draw() const
 {
-	return nullptr;
+	
 }
 
 void CharaBase::Hit()
