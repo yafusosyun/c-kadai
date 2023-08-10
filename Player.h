@@ -1,20 +1,9 @@
 #pragma once
 #include "CharaBase.h"
-class Player : public CharaBase
-{
+class Player : public CharaBase {
 public:
-	struct PLAYER {
-		int img;
-		int pos;
 
-	};
-private:
-	PLAYER Player;
-public:
-	CharaBase* Update(int GameMainScene()) override;
+	/* void Update()override;
 
-	CharaBase* Draw() override;
-
-	CharaBase* Hit() override;
+	 void Draw()const override;*/
 };
-

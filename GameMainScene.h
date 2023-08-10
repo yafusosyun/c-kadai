@@ -1,5 +1,6 @@
 #pragma once
 #include "SceneBase.h"
+#include "GamemainScene.h"
 class GamemainScene : public SceneBase
 {
 public:
@@ -11,13 +12,17 @@ public:
 	void SpawnBullet();//弾の配列に新しくデータを作成する
 
 
-	virtual SceneBase* Update() override;
+	 SceneBase* Update() override;
 
-	virtual void Draw() const override;
+	 void Draw()const override;
 
 	int player;
 	int life;
 	int *enemy[3];
 	int *bullets[3];
+
+private:
+	/*Player playre;*/
+
 };
 

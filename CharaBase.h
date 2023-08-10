@@ -1,18 +1,19 @@
 #pragma once
 #include "SphereCollider.h"
+#include "Player.h"
 #include "GameMainScene.h"
 class CharaBase : public SphereCollider
 {
 public:
 
-	CharaBase(int initialX, int initialY, int initialSpeed, int initialImage, int initialRadius);
-	virtual ~CharaBase();
+	CharaBase();
+	~CharaBase();
 
-	virtual CharaBase* Update (GamemainScene* gameScene);
+	virtual void Update();
 
-	virtual CharaBase* Draw();
+	virtual void Draw()const;
 
-	virtual CharaBase* Hit(int damage);
+	 void Hit();
 
 	int speed;      // 移動速度
 	int image;      // イメージ

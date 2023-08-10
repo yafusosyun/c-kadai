@@ -1,16 +1,27 @@
 #include "Player.h"
+#include "DxLib.h"
+#include "CharaBase.h"
+#include "SphereCollider.h"
 
-CharaBase* Player::Update(int GameMainScene())
+void Player::Update()
 {
-	return nullptr;
+	playerimg = LoadGraph("images/Player1.png");
+	position_x += 5;
+	/*if (CheckHitKey(KEY_INPUT_D)) {
+
+		position_x += 5;
+	}*/
+}
+void Player::Draw()const
+{
 }
 
-CharaBase* Player::Draw()
-{
-	return nullptr;
-}
 
-CharaBase* Player::Hit()
-{
-	return nullptr;
-}
+
+
+
+
+
+
+
+

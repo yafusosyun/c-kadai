@@ -3,7 +3,7 @@ class SceneBase
 {
 public:
 
-	virtual ~SceneBase() {};
+	 ~SceneBase() {};
 
 	virtual SceneBase* Update() = 0;
 
