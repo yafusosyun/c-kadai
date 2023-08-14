@@ -1,6 +1,7 @@
 #pragma once
 #include "SceneBase.h"
 #include "GamemainScene.h"
+#include "Player.h"
 class GamemainScene : public SceneBase
 {
 public:
@@ -22,7 +23,7 @@ public:
 	int *bullets[3];
 
 private:
-	/*Player playre;*/
+	Player player;
 
 };
 
