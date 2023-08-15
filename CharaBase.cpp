@@ -19,7 +19,6 @@ void CharaBase::Update()
 
 void CharaBase::Draw() 
 {
-	
 }
 
 

@@ -14,8 +14,8 @@ public:
 	Player();
 	~Player();
 
-	void Update()override;
+	void Update();
 
-	void Draw()override;
+	void Draw();
 };
 

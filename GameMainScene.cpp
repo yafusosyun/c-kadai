@@ -1,6 +1,6 @@
 #include "GamemainScene.h"
 #include "DxLib.h"
-#include "CharaBase.h"
+
 
 
 GamemainScene::GamemainScene()
@@ -28,5 +28,4 @@ SceneBase* GamemainScene::Update()
 void GamemainScene::Draw()const
 {
 	DrawFormatString(0, 0, 0xffffff, "GAMEMAIN");
-	
 }

@@ -8,8 +8,8 @@ public:
 	
 	
 
-	 void Update()override;
+	 void Update();
 
-	void Draw()override;
+	void Draw();
 };
 
