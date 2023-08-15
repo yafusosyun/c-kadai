@@ -12,9 +12,8 @@ public:
 
 	virtual void Update();
 
-	virtual void Draw()const;
+	virtual void Draw();
 
-	 void Hit();
 
 	int speed;      // 移動速度
 	int image;      // イメージ

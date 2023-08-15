@@ -5,13 +5,11 @@ class Enemy : public CharaBase
 {
 public:
 
-	void onCollision(SphereCollider obj) override {
-		/*DeleteGraph;*/
-	}
+	
 	
 
 	 void Update()override;
 
-	void Draw()const override;
+	void Draw()override;
 };
 

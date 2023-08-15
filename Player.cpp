@@ -1,9 +1,8 @@
 #include "Player.h"
-#include "CharaBase.h"
 #include "DxLib.h"
 Player::Player()
 {
-	player_img = LoadGraph("images/Player1.png");
+	Player_img = LoadGraph("images/Player1.png");
 }
 
 Player::~Player()
@@ -14,13 +13,7 @@ void Player::Update()
 {
 }
 
-void Player::Draw() const
+void Player::Draw()
 {
-	DrawGraph(300, 300, player_img,TRUE);
+	DrawGraph(200, 200, Player_img, TRUE);
 }
-
-void Player::Hit()
-{
-}
-
-

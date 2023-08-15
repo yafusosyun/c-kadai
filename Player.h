@@ -1,20 +1,21 @@
 #pragma once
 #include "CharaBase.h"
+#include "DxLib.h"
 class Player : public CharaBase
 {
+private:
+	int Player_img;
+
+
 public:
-	int player_img;
-	
+
+
+
 	Player();
 	~Player();
 
-	 void Update() override;
+	void Update()override;
 
-	 void Draw()const override;
-
-	 void Hit();
-		 
-
-	
+	void Draw()override;
 };
 
