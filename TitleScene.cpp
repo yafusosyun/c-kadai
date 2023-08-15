@@ -8,14 +8,14 @@ SceneBase* TitleScene::Update()
 		if (++g_MenuNumber > 1) g_MenuNumber = 0;
 	}
 	if (g_KeyFlg & PAD_INPUT_UP) {
-		if (--g_MenuNumber < 0) g_MenuNumber = 1;
+		if (--g_MenuNumber < 0) g_MenuNumber = 2;
 	}
 
 
 	// Ｚキーでメニュー選択
 	if (g_KeyFlg & PAD_INPUT_A) {
 		if (g_MenuNumber == 0) {
-			return new GamemainScene();
+			return new GameMainScene();
 		}
 	
 	}
@@ -36,11 +36,11 @@ void TitleScene::Draw() const
 	SetFontSize(100);
 	DrawFormatString(0, 0, GetColor(255, 255, 255), "shoot");
 	SetFontSize(75);
-	DrawFormatString(1000, 520, GetColor(200, 330, 255), "Start");
-	DrawFormatString(1000, 600, GetColor(200, 330, 255), "End");
+	DrawFormatString(400, 320, GetColor(200, 330, 255), "Start");
+	DrawFormatString(400, 400, GetColor(200, 330, 255), "End");
 
 	//// メニューカーソル（三角形）の表示
-	DrawTriangle(940, 540 + g_MenuY, 960, 560 + g_MenuY, 940, 580 + g_MenuY, GetColor(255, 0, 0), TRUE);
+	DrawTriangle(340, 340 + g_MenuY, 360, 360 + g_MenuY, 340, 380 + g_MenuY, GetColor(255, 0, 0), TRUE);
 
 	SetFontSize(40);
 	DrawFormatString(5, 430, GetColor(255, 255, 255),"*Zキーで選択");

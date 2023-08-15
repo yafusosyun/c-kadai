@@ -23,7 +23,7 @@
     <ClInclude Include="BulletsSpawner.h" />
     <ClInclude Include="CharaBase.h" />
     <ClInclude Include="Enemy.h" />
-    <ClInclude Include="GamemainScene.h" />
+    <ClInclude Include="GameMainScene.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="NwaySpawner.h" />
     <ClInclude Include="Player.h" />
@@ -37,7 +37,7 @@
     <ClCompile Include="BulletsSpawner.cpp" />
     <ClCompile Include="CharaBase.cpp" />
     <ClCompile Include="Enemy.cpp" />
-    <ClCompile Include="GamemainScene.cpp" />
+    <ClCompile Include="GameMainScene.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="NwaySpawner.cpp" />
     <ClCompile Include="Player.cpp" />

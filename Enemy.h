@@ -4,6 +4,7 @@
 class Enemy : public CharaBase
 {
 public:
+<<<<<<< HEAD
 
 	void onCollision(SphereCollider obj) override {
 		/*DeleteGraph;*/
@@ -13,5 +14,16 @@ public:
 	 void Update()override;
 
 	void Draw()const override;
+=======
+	CharaBase*Update(int GameMainScene())override;
+
+	CharaBase* Draw()override;
+
+	CharaBase* Hit()override;
+
+	int hp;
+	int pointint;//スコアの加算量
+	int weapon;//BulletsSpawcerの子クラス
+>>>>>>> parent of b5cd054 (a)
 };
 

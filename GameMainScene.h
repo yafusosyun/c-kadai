@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #pragma once
 #include "SceneBase.h"
 #include "GamemainScene.h"
@@ -27,3 +28,5 @@ private:
 
 };
 
+=======
+>>>>>>> parent of b5cd054 (a)

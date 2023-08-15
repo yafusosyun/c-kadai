@@ -6,14 +6,19 @@ class CharaBase : public SphereCollider
 
 	//‚±‚±‚É‰æ‘œ“Ç‚İ‚İ
 public:
+<<<<<<< HEAD
 
 	CharaBase();
 	~CharaBase();
 
 	virtual void Update();
+=======
+	virtual CharaBase* Update(int GameMainScene());
+>>>>>>> parent of b5cd054 (a)
 
 	virtual void Draw()const;
 
+<<<<<<< HEAD
 	 void Hit();
 
 	int speed;      // ˆÚ“®‘¬“x
@@ -21,5 +26,8 @@ public:
 	int life;       // ƒ‰ƒCƒt
 
 	
+=======
+	virtual CharaBase* Hit();
+>>>>>>> parent of b5cd054 (a)
 };
 

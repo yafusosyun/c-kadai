@@ -5,7 +5,7 @@ class TitleScene :public SceneBase
 {
 private:
     int  cursor_num{};
-    int g_MenuNumber = 0;
+    int g_MenuNumber;
     int cursorimg;
     int g_MenuY;
     int g_TitleImage;

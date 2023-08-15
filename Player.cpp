@@ -1,4 +1,5 @@
 #include "Player.h"
+<<<<<<< HEAD
 #include "CharaBase.h"
 #include "DxLib.h"
 Player::Player()
@@ -24,3 +25,5 @@ void Player::Hit()
 }
 
 
+=======
+>>>>>>> parent of b5cd054 (a)

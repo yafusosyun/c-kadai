@@ -4,6 +4,7 @@
 class SphereCollider
 {
 public:
+<<<<<<< HEAD
 	int a, b, c;
 
 	int X;
@@ -40,6 +41,14 @@ private:
 	//int circle2_x;
 	//int circle2_y;
 	//int radius2 = 0;//”¼Œa
+=======
+	void CheckCollision(class SphereCollider);
+	//ˆø”‚ÅSphereCollider‚ðŽó‚¯Žæ‚é
+	//SphereCollider“¯Žm‚Ì“–‚½‚è”»’è‚ðs‚¢“–‚½‚Á‚½‚©‚Ç‚¤‚©‚ð•Ô‚·
+
+	int location;//’†SÀ•W
+	int radius;//”¼Œa
+>>>>>>> parent of b5cd054 (a)
 
 	
 	

@@ -1,4 +1,5 @@
 #include "CharaBase.h"
+<<<<<<< HEAD
 #include "GamemainScene.h"
 #include "SphereCollider.h"
 #include "DxLib.h"
@@ -28,3 +29,5 @@ void CharaBase::Hit()
 }
 
 
+=======
+>>>>>>> parent of b5cd054 (a)

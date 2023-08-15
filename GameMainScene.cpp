@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include "GamemainScene.h"
 #include "DxLib.h"
 #include "CharaBase.h"
@@ -31,3 +32,5 @@ void GamemainScene::Draw()const
 	player.Draw();
 	
 }
+=======
+>>>>>>> parent of b5cd054 (a)
