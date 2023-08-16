@@ -32,5 +32,4 @@ void GamemainScene::Draw()const
 {
 	DrawFormatString(0, 0, 0xffffff, "GAMEMAIN");
 	player.Draw();
-	
 }

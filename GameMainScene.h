@@ -27,6 +27,5 @@ public:
 
 private:
 	Player player;
-	
 };
 

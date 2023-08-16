@@ -11,6 +11,6 @@ int BulletsSpawner::Shoot()
 void BulletsSpawner::Draw() const
 {
 	if ((PadInput & PAD_INPUT_2) == 0) {
-		DrawCircle(200, 200, 50, 0x00ffff);
+		DrawCircle(200, 200, 50, 0x00ffff); 
 	}
 }
