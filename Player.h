@@ -6,7 +6,7 @@ class Player : public CharaBase
 private:
 	int Player_img;
 
-
+	int PadInput;
 public:
 
 	int player_x = 200;
@@ -16,6 +16,6 @@ public:
 
 	void Update()override;
 
-	void Draw()override;
+	void Draw()const override;
 };
 

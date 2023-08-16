@@ -3,7 +3,6 @@
 class NwaySpawner : public BulletsSpawner
 {
 public:
-	 BulletsSpawner* Shoot() override;
 
 };
 

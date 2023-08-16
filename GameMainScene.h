@@ -1,6 +1,10 @@
 #pragma once
 #include "SceneBase.h"
-#include "GamemainScene.h"
+#include "Player.h"
+
+//test
+#include "BulletsSpawner.h"
+
 class GamemainScene : public SceneBase
 {
 public:
@@ -16,12 +20,13 @@ public:
 
 	 void Draw()const override;
 
-	int player;
+	
 	int life;
 	int *enemy[3];
 	int *bullets[3];
 
 private:
-
+	Player player;
+	
 };
 

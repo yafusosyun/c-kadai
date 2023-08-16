@@ -26,7 +26,7 @@ public:
 
 	//virtual void onCollision(SphereCollider obj) = 0;//è’ìÀÇµÇΩéû
 
-	void Draw();
+	void Draw()const;
 
 	
 
