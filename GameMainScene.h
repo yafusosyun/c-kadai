@@ -22,6 +22,6 @@ public:
 	int *bullets[3];
 
 private:
-	
+
 };
 

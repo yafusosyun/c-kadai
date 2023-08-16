@@ -9,7 +9,7 @@ private:
 
 public:
 
-
+	int player_x = 200;
 
 	Player();
 	~Player();
