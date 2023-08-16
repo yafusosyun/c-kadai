@@ -17,7 +17,7 @@ void CharaBase::Update()
 	//”¼Œa‚Í‰æ‘œ‚ÌƒTƒCƒY‚É‡‚í‚¹‚Ä’²®‚·‚é
 }
 
-void CharaBase::Draw() 
+void CharaBase::Draw() const
 {
 	
 }

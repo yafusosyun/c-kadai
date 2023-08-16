@@ -26,6 +26,7 @@
     <ClInclude Include="GamemainScene.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="NwaySpawner.h" />
+    <ClInclude Include="padInput.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="SceneBase.h" />
     <ClInclude Include="SceneManager.h" />
@@ -40,6 +41,7 @@
     <ClCompile Include="GamemainScene.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="NwaySpawner.cpp" />
+    <ClCompile Include="padInput.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="SceneBase.cpp" />
     <ClCompile Include="SceneManager.cpp" />

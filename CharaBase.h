@@ -12,7 +12,7 @@ public:
 
 	virtual void Update();
 
-	virtual void Draw();
+	virtual void Draw()const;
 
 
 	int speed;      // ˆÚ“®‘¬“x
