@@ -27,6 +27,6 @@ public:
 
 private:
 	Player player;
-	Bullet bullet[1000];
+	Bullet bullet;
 };
 

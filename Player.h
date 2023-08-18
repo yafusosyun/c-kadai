@@ -25,5 +25,15 @@ public:
 	int bulletsX = 0;
 	int bulletsY;
 
+
+	int Player_position;
+
+	void SetPosition(int Position) {
+		Player_position = Position;
+	}
+
+	int GetPosition() {
+		return  Player_position;
+	}
 };
 

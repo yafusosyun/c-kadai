@@ -2,7 +2,7 @@
 #include "SphereCollider.h"
 #include "Player.h"
 #define BULLETS_MAX 1000
-
+#include"main.h"
 struct Bullets {
     int x = 0;
     int y = 0;
@@ -23,6 +23,16 @@ public:
     };
 
 
+        // íeä€ èoåª
+        void SpawnBullet(float x) {
+            for (int i = 0; i < BULLETS_MAX; i++) {
+                if (bullets[i].flg == 1) {
+                    bullets[i].x = x;
+                    bullets[i].y = SCREEN_HEIGHT + 70;
+                    i = BULLETS_MAX;
+                };
+            };
+        };
 
     Bullet();
 

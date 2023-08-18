@@ -25,8 +25,10 @@ SceneBase* GamemainScene::Update()
 
 	player.Update();
 
+	if (CheckHitKey(KEY_INPUT_S)) {
+		bullet.SpawnBullet(player.GetPosition());
+	}
 
-	bullet[i].Update();
 
 	return this;
 }
