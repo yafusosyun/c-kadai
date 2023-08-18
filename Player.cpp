@@ -3,6 +3,8 @@
 Player::Player()
 {
 	Player_img = LoadGraph("images/Player1.png");
+	player_x = 200;
+	player_y = 500;
 }
 
 Player::~Player()
@@ -22,18 +24,19 @@ void Player::Update()
 		player_x--;
 	}
 
+	if ((PadInput & PAD_INPUT_UP) == 0) {
+		player_y++;
+	}
 
-	/*if (CheckHitKey(KEY_INPUT_D)) {
-		player_x++;
-	}*/
-	/*if (CheckHitKey(KEY_INPUT_A)) {
-		player_x--;
-	}*/
+	if ((PadInput & PAD_INPUT_DOWN) == 0) {
+		player_y--;
+	}
+
 }
 
 
 void Player::Draw()const
-{	
-	DrawGraph(player_x, 540, Player_img, TRUE);
+{
+	DrawGraph(player_x, player_y, Player_img, TRUE);
 	DrawFormatString(200, 400, 0xffffff, "%d", player_x);
 }

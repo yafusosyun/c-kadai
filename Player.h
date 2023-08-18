@@ -9,7 +9,11 @@ private:
 	int PadInput;
 public:
 
-	int player_x = 200;
+	int player_x;
+	int player_y;
+
+	int bullet_positionX = player_x;
+	int bullet_positionY = player_y;
 
 	Player();
 	~Player();
@@ -17,5 +21,9 @@ public:
 	void Update()override;
 
 	void Draw()const override;
+
+	int bulletsX = 0;
+	int bulletsY;
+
 };
 

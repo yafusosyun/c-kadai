@@ -1,7 +1,7 @@
 #pragma once
 #include "SceneBase.h"
 #include "Player.h"
-
+#include "Bullet.h"
 //test
 #include "BulletsSpawner.h"
 
@@ -27,5 +27,6 @@ public:
 
 private:
 	Player player;
+	Bullet bullet[1000];
 };
 
