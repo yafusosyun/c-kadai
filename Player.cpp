@@ -39,6 +39,4 @@ void Player::Update()
 void Player::Draw()const
 {
 	DrawGraph(player_x, player_y, Player_img, TRUE);
-	DrawFormatString(200, 400, 0xffffff, "%d", player_x);
-	DrawFormatString(200, 400, 0xffffff, "%d", Player_position);
 }
