@@ -15,25 +15,6 @@ class Bullet : public SphereCollider
 public:
 
 
-    //弾丸 リセット
-        void BubbleReset() {
-        for (int i = 0; i < BULLETS_MAX; i++) {
-            bullets[i].flg = 0;
-        };
-    };
-
-
-        // 弾丸 出現
-        void SpawnBullet(float x) {
-            for (int i = 0; i < BULLETS_MAX; i++) {
-                if (bullets[i].flg == 1) {
-                    bullets[i].x = x;
-                    bullets[i].y = SCREEN_HEIGHT + 70;
-                    i = BULLETS_MAX;
-                };
-            };
-        };
-
     Bullet();
 
     void Update();
@@ -61,7 +42,7 @@ public:
     int bulletsy;//弾丸の座標
 
 
-    Player* player;
+    Player player;
 
 private:
     int PadInput;

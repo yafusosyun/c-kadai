@@ -3,10 +3,10 @@
 #include "Player.h"
 Bullet::Bullet()
 {
-		player = new Player;
+		
 
-		x = player->player_x;
-		y = player->player_y;
+		x = player.player_x;
+		y = player.player_y;
 	
 }
 void Bullet::Update()
@@ -46,17 +46,6 @@ void Bullet::Update()
 		if ((PadInput & PAD_INPUT_DOWN) == 0) {
 			y--;
 		}
-	
-
-		for (int i = 0; i < BULLETS_MAX; i++) {
-			if (bullets[i].flg == 1)
-					bullets[i].y--;
-					};
-				};
-			};
-		};
-
-
 }
 
 void Bullet::Draw()const
@@ -66,15 +55,11 @@ void Bullet::Draw()const
 			DrawCircle(bulletsx + 10, bulletsy + Bulets_speed, Bullets_radius, 0x000fff, TRUE);
 
 		}
-	DrawFormatString(200, 200, 0xfffff,"%d",Bullets_flg);
-
-	DrawFormatString(200, 230, 0xffffff, "%d", x);
 }
 
 
 Bullet::~Bullet()
 {
-	delete player;
 }
 
 void Bullet::GetDamage()
