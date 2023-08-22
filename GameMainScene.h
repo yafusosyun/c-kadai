@@ -24,7 +24,7 @@ public:
 	int life;
 	int *enemy[3];
 	int *bullets[3];
-
+	z
 private:
 	Player player;
 	Bullet bullet;
