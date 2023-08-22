@@ -3,30 +3,26 @@
 #include "Player.h"
 #include "Bullet.h"
 //test
-#include "BulletsSpawner.h"
+#include "BulletManager.h"
 
 class GamemainScene : public SceneBase
 {
 public:
 
-	GamemainScene();
-	~GamemainScene();
-	void HitCheck();
+    GamemainScene();
+    ~GamemainScene();
 
-	void SpawnBullet();//弾の配列に新しくデータを作成する
+    void HitCheck();
 
+    SceneBase* Update() override;
 
-	 SceneBase* Update() override;
+    void Draw() const override;
 
-	 void Draw()const override;
+    int life;
+    int* enemy[3];
 
-	
-	int life;
-	int *enemy[3];
-	int *bullets[3];
-	z
 private:
-	Player player;
-	Bullet bullet;
+    Player player;
+    BulletManager bulletManager;
 };
 

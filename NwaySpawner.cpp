@@ -1,6 +1,3 @@
-#include "NwaySpawner.h"
-
-int NwaySpawner::Shoot()
-{
-	return 0;
-}
+//#include "NwaySpawner.h"
+//
+//
