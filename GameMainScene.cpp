@@ -22,9 +22,8 @@ void GamemainScene::SpawnBullet()
 
 SceneBase* GamemainScene::Update()
 {
-
-	player.Update();
-	bullet.Update();
+	player->Update();
+	bullet->Update();
 
 
 	return this;
@@ -33,9 +32,10 @@ SceneBase* GamemainScene::Update()
 void GamemainScene::Draw()const
 {
 	DrawFormatString(0, 0, 0xffffff, "GAMEMAIN");
-	player.Draw();
 	
-	bullet.Draw();
+	player->Draw();
+	
+	bullet->Draw();
 
 	
 }

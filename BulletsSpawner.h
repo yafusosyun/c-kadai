@@ -1,9 +1,17 @@
 #pragma once
 #include "GameMainScene.h"
 #include "DxLib.h"
+
+
+
+
 class BulletsSpawner
 {
 public:
+
+
+
+
 	 ~BulletsSpawner() {};
 
 	virtual int Shoot();

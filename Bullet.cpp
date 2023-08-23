@@ -5,8 +5,8 @@ Bullet::Bullet()
 {
 		
 
-		x = player.player_x;
-		y = player.player_y;
+		x = player->player_x;
+		y = player->player_y;
 	
 }
 void Bullet::Update()

@@ -5,6 +5,7 @@
 //test
 #include "BulletsSpawner.h"
 
+
 class GamemainScene : public SceneBase
 {
 public:
@@ -23,10 +24,10 @@ public:
 	
 	int life;
 	int *enemy[3];
-	int *bullets[3];
-	z
+	int* bullets[3];
 private:
-	Player player;
-	Bullet bullet;
+	Player *player;
+	Bullet *bullet;
+
 };
 

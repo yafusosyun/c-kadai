@@ -9,7 +9,6 @@ struct Bullets {
     int flg = 0;
 };
 
-
 class Bullet : public SphereCollider
 {
 public:
@@ -42,10 +41,10 @@ public:
     int bulletsy;//íeä€ÇÃç¿ïW
 
 
-    Player player;
 
 private:
     int PadInput;
+    Player* player;
 
     Bullets bullets[BULLETS_MAX];
 };
