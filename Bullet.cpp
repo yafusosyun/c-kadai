@@ -11,50 +11,72 @@ Bullet::Bullet()
 }
 void Bullet::Update()
 {
+	count++;
+
 	
 
-	if (CheckHitKey(KEY_INPUT_S)) {
+				if (bullets[i].flg == 0) {
+					bullets[i].x = x;
+					bullets[i].y = y;
+				}
 
-		Bullets_flg = 1;
+			
+				if (bullets[i].y < 0) bullets[i].flg = 0;
 
-			bulletsx = x;
-			bulletsy = y;
+		if (CheckHitKey(KEY_INPUT_S)) {
+			bullets[i].flg = 1;
+			if (count % 10 == 0) i++;
+			if (i == BULLETS_MAX) i = 0;
+		}
+
+		if (bullets[i].flg == 1){
+	for (int i = 0; i < BULLETS_MAX; i++) {
+		
+			bullets[i].y -= 2;
+		}
+		
 	}
-	if (Bullets_flg == 1) Bulets_speed--;
 
-	/*if (y - Bulets_speed < 0) Bullets_flg = 0;*/
-
+	
 
 
-	//player.cpp‚Å‚à“¯‚¶‚±‚Æ‘‚¢‚Ä‚é‚©‚çÁ‚µ‚½‚¢
+
+	//player.cpp‚©‚çÀ•WŽ‚Á‚Ä‚«‚½‚¢
 	PadInput = GetJoypadInputState(DX_INPUT_KEY_PAD1);
 
 	
 
 		if ((PadInput & PAD_INPUT_LEFT) == 0) {
-			x++;
+			x+= 2;
 		}
 		
 		if ((PadInput & PAD_INPUT_RIGHT) == 0) {
-			x--;
+			x-= 2;
 		}
 
 		if ((PadInput & PAD_INPUT_UP) == 0) {
-			y++;
+			y+= 2;
 		}
 
 		if ((PadInput & PAD_INPUT_DOWN) == 0) {
-			y--;
+			y-= 2;
 		}
 }
 
 void Bullet::Draw()const
 {
-		if (Bullets_flg == 1) {
+	for (int i = 0; i < BULLETS_MAX; i++) {
+		if (bullets[i].flg == 1) {
 
-			DrawCircle(bulletsx + 10, bulletsy + Bulets_speed, Bullets_radius, 0x000fff, TRUE);
+			DrawCircle(bullets[i].x  + 100, bullets[i].y, Bullets_radius, 0x000fff, TRUE);
 
 		}
+	}
+
+	DrawFormatString(200, 220, 0xffffff, "%d", player.player_y);
+	
+
+
 }
 
 

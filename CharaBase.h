@@ -13,10 +13,11 @@ public:
 
 	virtual void Draw()const;
 
+	void Hit();
 
-	int speed;      // 移動速度
+	int speed = 2;      // 移動速度
 	int image;      // イメージ
-	int life;       // ライフ
+	int life = 3;       // ライフ
 
 	
 };

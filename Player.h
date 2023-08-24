@@ -12,8 +12,7 @@ public:
 	int player_x;
 	int player_y;
 
-	int bullet_positionX = player_x;
-	int bullet_positionY = player_y;
+
 
 	Player();
 	~Player();
@@ -26,14 +25,15 @@ public:
 	int bulletsY;
 
 
-	int Player_position;
+	int Player_positionX;
+	int Player_positionY;
 
-	void SetPosition(int Position) {
-		Player_position = Position;
+	void SetPosition(int player_x) {
+		Player_positionX = player_x;
 	}
 
 	int GetPosition() {
-		return  Player_position;
+		return  Player_positionX;
 	}
 };
 

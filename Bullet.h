@@ -13,7 +13,12 @@ struct Bullets {
 class Bullet : public SphereCollider
 {
 public:
+    int bulletcount = 0;
+    int i = 0;
 
+    int count = 0;
+
+    Bullets bullets[BULLETS_MAX];
 
     Bullet();
 
@@ -33,7 +38,7 @@ public:
 
     int Bulets_speed = 0;
     int Bullets_flg = 0;
-    int Bullets_radius = 10;//íeÇÃîºåa
+    int Bullets_radius = 2;//íeÇÃîºåa
 //playerno ÇÃç¿ïW
     int x;
     int y;
@@ -47,6 +52,5 @@ public:
 private:
     int PadInput;
 
-    Bullets bullets[BULLETS_MAX];
 };
 
