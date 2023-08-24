@@ -1,7 +1,7 @@
 #pragma once
 #include "SphereCollider.h"
 #include "Player.h"
-#define BULLETS_MAX 1000
+
 #include"main.h"
 struct Bullets {
     int x = 0;

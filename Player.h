@@ -9,6 +9,7 @@ private:
 	int PadInput;
 public:
 
+
 	int player_x;
 	int player_y;
 

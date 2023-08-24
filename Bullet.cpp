@@ -1,6 +1,7 @@
 #include "Bullet.h"
 #include "DxLib.h"
 #include "Player.h"
+
 Bullet::Bullet()
 {
 		
@@ -13,8 +14,6 @@ void Bullet::Update()
 {
 	count++;
 
-	
-
 				if (bullets[i].flg == 0) {
 					bullets[i].x = x;
 					bullets[i].y = y;
@@ -26,7 +25,13 @@ void Bullet::Update()
 		if (CheckHitKey(KEY_INPUT_S)) {
 			bullets[i].flg = 1;
 			if (count % 10 == 0) i++;
-			if (i == BULLETS_MAX) i = 0;
+		}
+		if (i == BULLETS_MAX) i = 0;
+
+		if (i == BULLETS_MAX) {
+			for (int j = 0; j < BULLETS_MAX; j++) {
+				bullets[j].flg = 0;
+			}
 		}
 
 		if (bullets[i].flg == 1){
@@ -68,12 +73,12 @@ void Bullet::Draw()const
 	for (int i = 0; i < BULLETS_MAX; i++) {
 		if (bullets[i].flg == 1) {
 
-			DrawCircle(bullets[i].x  + 100, bullets[i].y, Bullets_radius, 0x000fff, TRUE);
+			DrawCircle(bullets[i].x , bullets[i].y - 50, Bullets_radius, 0x000fff, TRUE);
 
 		}
 	}
 
-	DrawFormatString(200, 220, 0xffffff, "%d", player.player_y);
+
 	
 
 
@@ -87,3 +92,4 @@ Bullet::~Bullet()
 void Bullet::GetDamage()
 {
 }
+

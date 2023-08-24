@@ -22,5 +22,9 @@ void CharaBase::Draw()const
 	
 }
 
+void CharaBase::Hit()
+{
+}
+
 
 

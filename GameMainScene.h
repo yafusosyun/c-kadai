@@ -4,7 +4,7 @@
 #include "Bullet.h"
 //test
 #include "BulletsSpawner.h"
-
+#include "SphereCollider.h"
 class GamemainScene : public SceneBase
 {
 public:
@@ -25,8 +25,11 @@ public:
 	int *enemy[3];
 	int *bullets[3];
 
+	int a;
+
 private:
 	Player player;
 	Bullet bullet;
+
 };
 

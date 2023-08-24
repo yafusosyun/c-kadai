@@ -1,10 +1,12 @@
 #include "Player.h"
 
+
+
 Player::Player()
 {
-	Player_img = LoadGraph("images/Player1.png");
-	player_x = 200;
-	player_y = 500;
+	Player_img = LoadGraph("images/player3.png");
+	player_x = 600;
+	player_y = 600;
 }
 
 Player::~Player()
@@ -39,6 +41,8 @@ void Player::Update()
 
 void Player::Draw()const
 {
-	DrawGraph(player_x, player_y, Player_img, TRUE);
-	DrawFormatString(300, 300, 0xffffff, "%d", Player_positionX);
+	DrawRotaGraph(player_x +2, player_y,0.5,0.0, Player_img, TRUE);
+
+	DrawFormatString(50, 50, 0xffffff, "%d", a);
 }
+

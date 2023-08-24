@@ -26,6 +26,7 @@ SceneBase* GamemainScene::Update()
 	player.Update();
 	bullet.Update();
 
+	a = player.GetPosition();
 
 	return this;
 }
@@ -33,9 +34,9 @@ SceneBase* GamemainScene::Update()
 void GamemainScene::Draw()const
 {
 	DrawFormatString(0, 0, 0xffffff, "GAMEMAIN");
+	
 	player.Draw();
 	
 	bullet.Draw();
 
-	
 }

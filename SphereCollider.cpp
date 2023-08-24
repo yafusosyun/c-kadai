@@ -3,8 +3,6 @@
 #include "DxLib.h"
 
 
-void SphereCollider::Draw()const
+void SphereCollider::CheckCollision()
 {
-	DrawCircle(100, 100, 100, 0xffffff);
 }
-
