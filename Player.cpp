@@ -41,7 +41,7 @@ void Player::Update()
 
 void Player::Draw()const
 {
-	DrawRotaGraph(player_x +2, player_y,0.5,0.0, Player_img, TRUE);
+	DrawRotaGraph(player_x +2, player_y,0.1,0.0, Player_img, TRUE);
 
 	DrawFormatString(50, 50, 0xffffff, "%d", a);
 }

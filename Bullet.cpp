@@ -73,7 +73,7 @@ void Bullet::Draw()const
 	for (int i = 0; i < BULLETS_MAX; i++) {
 		if (bullets[i].flg == 1) {
 
-			DrawCircle(bullets[i].x , bullets[i].y - 50, Bullets_radius, 0x000fff, TRUE);
+			DrawCircle(bullets[i].x , bullets[i].y, Bullets_radius, 0x000fff, TRUE);
 
 		}
 	}

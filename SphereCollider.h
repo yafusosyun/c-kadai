@@ -6,10 +6,6 @@ class SphereCollider
 {
 public:
 
-
-	int* player_x; // プレイヤーのX座標を保持するポインタ
-	int* player_y; // プレイヤーのY座標を保持するポインタ
-
 	int a;
 
 	void Draw()const;
@@ -21,10 +17,6 @@ public:
 
 	void CheckCollision();
 
-	int* player_x;
-	int* player_y;
-	int* bullet_x;
-	int* bullet_y;
 
 private:
 
