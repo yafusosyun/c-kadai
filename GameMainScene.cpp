@@ -8,6 +8,8 @@
 #include "BulletsSpawner.h"
 GamemainScene::GamemainScene()
 {
+	collider.player_x = &player.player_x; // プレイヤーのX座標のポインタを渡す
+	collider.player_y = &player.player_y; // プレイヤーのY座標のポインタを渡す
 }
 GamemainScene::~GamemainScene()
 {

@@ -9,7 +9,12 @@ class GamemainScene : public SceneBase
 {
 public:
 
-	GamemainScene();
+	GamemainScene() {
+		collider.player_x = &player.player_x;
+		collider.player_y = &player.player_y;
+		collider.bullet_x = &bullet.x;
+		collider.bullet_y = &bullet.y;
+	}
 	~GamemainScene();
 	void HitCheck();
 
@@ -31,5 +36,6 @@ private:
 	Player player;
 	Bullet bullet;
 
+	SphereCollider collider;
 };
 
