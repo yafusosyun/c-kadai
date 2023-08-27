@@ -29,6 +29,7 @@ public:
     ~Bullet();
 
     void GetDamage();
+
     void SetLocationX(int  _x);
 
     int damage;
