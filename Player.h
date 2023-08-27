@@ -33,8 +33,6 @@ public:
 		Player_positionX = player_x;
 	}
 
-	int GetPosition() {
-		return  Player_positionX;
-	}
+	int GetPositionX();
 };
 

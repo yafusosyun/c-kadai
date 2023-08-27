@@ -46,3 +46,8 @@ void Player::Draw()const
 	DrawFormatString(50, 50, 0xffffff, "%d", a);
 }
 
+int Player::GetPositionX()
+{
+	return player_x;
+}
+

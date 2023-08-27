@@ -29,7 +29,7 @@ public:
     ~Bullet();
 
     void GetDamage();
-
+    void SetLocationX(int  _x);
 
     int damage;
     int speed;
@@ -51,6 +51,6 @@ public:
 
 private:
     int PadInput;
-
+    int P_x;
 };
 

@@ -4,18 +4,12 @@
 
 Bullet::Bullet()
 {
-		
-
-		x = player.player_x;
-		y = player.player_y;
-	
 }
 void Bullet::Update()
 {
 	count++;
-
 				if (bullets[i].flg == 0) {
-					bullets[i].x = x;
+					bullets[i].x = P_x;
 					bullets[i].y = y;
 				}
 
@@ -28,11 +22,6 @@ void Bullet::Update()
 		}
 		if (i == BULLETS_MAX) i = 0;
 
-		if (i == BULLETS_MAX) {
-			for (int j = 0; j < BULLETS_MAX; j++) {
-				bullets[j].flg = 0;
-			}
-		}
 
 		if (bullets[i].flg == 1){
 	for (int i = 0; i < BULLETS_MAX; i++) {
@@ -50,14 +39,6 @@ void Bullet::Update()
 	PadInput = GetJoypadInputState(DX_INPUT_KEY_PAD1);
 
 	
-
-		if ((PadInput & PAD_INPUT_LEFT) == 0) {
-			x+= 2;
-		}
-		
-		if ((PadInput & PAD_INPUT_RIGHT) == 0) {
-			x-= 2;
-		}
 
 		if ((PadInput & PAD_INPUT_UP) == 0) {
 			y+= 2;
@@ -91,5 +72,10 @@ Bullet::~Bullet()
 
 void Bullet::GetDamage()
 {
+}
+
+void Bullet::SetLocationX(int _x)
+{
+	P_x = _x;
 }
 

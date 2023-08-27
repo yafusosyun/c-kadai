@@ -28,8 +28,8 @@ public:
 	int a;
 
 private:
-	Player player;
-	Bullet bullet;
+	Player* player;
+	Bullet* bullet;
 
 	SphereCollider collider;
 };
