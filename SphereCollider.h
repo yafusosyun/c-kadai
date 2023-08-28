@@ -1,7 +1,7 @@
 #pragma once
 #include "DxLib.h"
 #include <math.h>
-#include "Player.h"
+//#include "Player.h"
 class SphereCollider
 {
 public:
@@ -17,10 +17,10 @@ public:
 	int location = 0;//’†SÀ•W
 	int length = 0;
 
-	void CheckCollision(SphereCollider* spherecollider);
+	//void CheckCollision(SphereCollider* spherecollider);
 
 
 private:
-	Player* player;
+
 };
 

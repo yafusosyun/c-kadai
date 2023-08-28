@@ -5,7 +5,6 @@
 
 SphereCollider::SphereCollider()
 {
-	player = new Player();
 }
 
 void SphereCollider::Update()
