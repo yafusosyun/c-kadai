@@ -4,7 +4,7 @@
 
 int CheckCollision(SphereCollider* spherecollider)
 {
-
+	return 0;
 }
 
 void SphereCollider::Draw() const
