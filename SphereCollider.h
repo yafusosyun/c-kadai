@@ -15,7 +15,7 @@ public:
 	int location = 0;//’†SÀ•W
 	int length = 0;
 
-	void CheckCollision();
+	int CheckCollision(SphereCollider* spherecollider);
 
 
 private:

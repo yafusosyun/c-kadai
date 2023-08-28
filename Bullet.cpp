@@ -10,7 +10,7 @@ void Bullet::Update()
 	count++;
 				if (bullets[i].flg == 0) {
 					bullets[i].x = P_x;
-					bullets[i].y = y;
+					bullets[i].y = P_y;
 				}
 
 			
@@ -18,7 +18,7 @@ void Bullet::Update()
 
 		if (CheckHitKey(KEY_INPUT_S)) {
 			bullets[i].flg = 1;
-			if (count % 10 == 0) i++;
+			if (count % 5 == 0) i++;
 		}
 		if (i == BULLETS_MAX) i = 0;
 
@@ -26,27 +26,10 @@ void Bullet::Update()
 		if (bullets[i].flg == 1){
 	for (int i = 0; i < BULLETS_MAX; i++) {
 		
-			bullets[i].y -= 2;
+			bullets[i].y -= 2.0f;
 		}
 		
 	}
-
-	
-
-
-
-	//player.cpp‚©‚çÀ•WŽ‚Á‚Ä‚«‚½‚¢
-	PadInput = GetJoypadInputState(DX_INPUT_KEY_PAD1);
-
-	
-
-		if ((PadInput & PAD_INPUT_UP) == 0) {
-			y+= 2;
-		}
-
-		if ((PadInput & PAD_INPUT_DOWN) == 0) {
-			y-= 2;
-		}
 }
 
 void Bullet::Draw()const
@@ -57,6 +40,7 @@ void Bullet::Draw()const
 			DrawCircle(bullets[i].x , bullets[i].y, Bullets_radius, 0x000fff, TRUE);
 
 		}
+		DrawFormatString(200,200,0xffffff,"%d", bullets[0].x);
 	}
 
 
@@ -77,5 +61,10 @@ void Bullet::GetDamage()
 void Bullet::SetLocationX(int _x)
 {
 	P_x = _x;
+}
+
+void Bullet::SetLocationY(int _y)
+{
+	P_y = _y;
 }
 

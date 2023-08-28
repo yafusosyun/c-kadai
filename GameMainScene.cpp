@@ -26,11 +26,11 @@ SceneBase* GamemainScene::Update()
 {
 	player->Update();
 	bullet->SetLocationX(player->GetPositionX());
+	bullet->SetLocationY(player->GetPositionY());
 	bullet->Update();
-	/*player.Update();
-	bullet.Update();
 
-	a = player.GetPosition();*/
+
+	
 
 	return this;
 }
@@ -40,8 +40,5 @@ void GamemainScene::Draw()const
 	DrawFormatString(0, 0, 0xffffff, "GAMEMAIN");
 	player->Draw();
 	bullet->Draw();
-	/*player.Draw();
 	
-	bullet.Draw();*/
-
 }

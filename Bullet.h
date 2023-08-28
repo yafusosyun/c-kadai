@@ -4,8 +4,8 @@
 
 #include"main.h"
 struct Bullets {
-    int x = 0;
-    int y = 0;
+    float x = 0;
+    float y = 0;
     int flg = 0;
 };
 
@@ -32,6 +32,8 @@ public:
 
     void SetLocationX(int  _x);
 
+    void SetLocationY(int _y);
+
     int damage;
     int speed;
     int angle;
@@ -47,11 +49,9 @@ public:
     int bulletsx;
     int bulletsy;//íeä€ÇÃç¿ïW
 
-
-    Player player;
-
 private:
     int PadInput;
     int P_x;
+    int P_y;
 };
 

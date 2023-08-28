@@ -2,9 +2,9 @@
 #include <math.h>
 #include "DxLib.h"
 
-
-void SphereCollider::CheckCollision()
+int CheckCollision(SphereCollider* spherecollider)
 {
+
 }
 
 void SphereCollider::Draw() const

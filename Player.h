@@ -29,10 +29,10 @@ public:
 	int Player_positionX;
 	int Player_positionY;
 
-	void SetPosition(int player_x) {
-		Player_positionX = player_x;
-	}
+	
 
 	int GetPositionX();
+
+	int GetPositionY();
 };
 
