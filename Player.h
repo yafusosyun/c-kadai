@@ -10,11 +10,6 @@ private:
 public:
 
 
-	int player_x;
-	int player_y;
-
-
-
 	Player();
 	~Player();
 

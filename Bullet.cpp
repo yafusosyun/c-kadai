@@ -2,69 +2,20 @@
 #include "DxLib.h"
 #include "Player.h"
 
-Bullet::Bullet()
+Bullet::Bullet(int px,int py)
 {
+	x = px;
+	y = py;
+	radius = 2;
 }
 void Bullet::Update()
 {
-	count++;
-				if (bullets[i].flg == 0) {
-					bullets[i].x = P_x;
-					bullets[i].y = P_y;
-				}
-
-			
-				if (bullets[i].y < 0) bullets[i].flg = 0;
-
-		if (CheckHitKey(KEY_INPUT_S)) {
-			bullets[i].flg = 1;
-			if (count % 5 == 0) i++;
-		}
-		if (i == BULLETS_MAX) i = 0;
-
-
-		if (bullets[i].flg == 1){
-	for (int i = 0; i < BULLETS_MAX; i++) {
-		
-			bullets[i].y -= 2.0f;
-		}
-		
-	}
-
-
-		//’e‚Ìflg‚ð300,600,999‚Å•ª‚¯‚ÄƒŠƒZƒbƒg
-		if (i == 300) {
-			for (int j = 600; j < BULLETS_MAX; j++) {
-				bullets[j].flg = 0;
-			}
-		}
-
-
-		if (i == 600) {
-			for (int j = 0; j < 300; j++) {
-				bullets[j].flg = 0;
-			}
-		}
-
-		if (i == 999){
-			for (int j = 300; j < 600; j++) {
-				bullets[j].flg = 0;
-			}
-		}
+		y = y - 1;
 }
 
 void Bullet::Draw()const
 {
-	for (int i = 0; i < BULLETS_MAX; i++) {
-		if (bullets[i].flg == 1) {
-
-			DrawCircle(bullets[i].x , bullets[i].y, Bullets_radius, 0x000fff, TRUE);
-
-		}
-	}
-
-
-	DrawFormatString(200, 200, 0xffffff, "%d", i);
+			DrawCircle(x , y,radius, 0x000fff, TRUE);
 
 }
 

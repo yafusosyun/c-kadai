@@ -30,8 +30,10 @@ public:
 
 private:
 	Player* player;
-	Bullet* bullet;
+	Bullet* bullet[BULLETS_MAX];
 
 	Enemy* enemy;
+
+	int bullet_num;
 };
 

@@ -3,24 +3,12 @@
 #include "Player.h"
 
 #include"main.h"
-struct Bullets {
-    float x = 0;
-    float y = 0;
-    int flg = 0;
-};
-
 
 class Bullet : public SphereCollider
 {
 public:
-    int bulletcount = 0;
-    int i = 0;
-
-    int count = 0;
-
-    Bullets bullets[BULLETS_MAX];
-
-    Bullet();
+ 
+    Bullet(int px,int py);
 
     void Update();
 
@@ -39,15 +27,6 @@ public:
     int angle;
 
 
-    int Bulets_speed = 0;
-    int Bullets_flg = 0;
-    int Bullets_radius = 2;//íeÇÃîºåa
-//playerno ÇÃç¿ïW
-    int x;
-    int y;
-
-    int bulletsx;
-    int bulletsy;//íeä€ÇÃç¿ïW
 
 private:
     int PadInput;

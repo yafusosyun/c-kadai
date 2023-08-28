@@ -12,8 +12,7 @@ public:
 	int weapon;
 	
 
-	int enemy_x;
-	int enemy_y;
+
 	 void Update()override;
 
 	void Draw()const  override;

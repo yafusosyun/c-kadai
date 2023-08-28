@@ -14,13 +14,18 @@ public:
 
 	int radius;//”¼Œa
 
+	int x;
+	int y;
+
 	int location = 0;//’†SÀ•W
 	int length = 0;
 
-	//void CheckCollision(SphereCollider* spherecollider);
+	bool CheckCollision(SphereCollider* spherecollider);
 
 
 private:
+
+	float distance;
 
 };
 
