@@ -5,6 +5,7 @@
 
 CharaBase::CharaBase()
 {
+	Player_img = LoadGraph("images/player3.png");
 }
 
 CharaBase::~CharaBase()

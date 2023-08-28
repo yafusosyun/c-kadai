@@ -19,6 +19,8 @@ public:
 	int image;      // イメージ
 	int life = 3;       // ライフ
 
-	
+	int Eimg;
+
+	int Player_img;
 };
 

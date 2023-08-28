@@ -4,7 +4,7 @@
 class Player : public CharaBase
 {
 private:
-	int Player_img;
+
 
 	int PadInput;
 public:

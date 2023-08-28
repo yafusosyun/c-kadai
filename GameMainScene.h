@@ -5,6 +5,7 @@
 //test
 #include "BulletsSpawner.h"
 #include "SphereCollider.h"
+#include "Enemy.h"
 class GamemainScene : public SceneBase
 {
 public:
@@ -22,7 +23,7 @@ public:
 
 	
 	int life;
-	int *enemy[3];
+	/*int *enemy[3];*/
 	int *bullets[3];
 
 	int a;
@@ -31,6 +32,6 @@ private:
 	Player* player;
 	Bullet* bullet;
 
-	SphereCollider collider;
+	Enemy* enemy;
 };
 

@@ -4,7 +4,8 @@
 
 Player::Player()
 {
-	Player_img = LoadGraph("images/player3.png");
+	radius = 15;
+
 	player_x = 600;
 	player_y = 600;
 }
@@ -43,7 +44,8 @@ void Player::Draw()const
 {
 	DrawRotaGraph(player_x +2, player_y,0.1,0.0, Player_img, TRUE);
 
-	DrawFormatString(50, 50, 0xffffff, "%d", a);
+	//デバック用
+	DrawCircle(player_x + 2, player_y,radius, 0xffffff,0);
 }
 
 int Player::GetPositionY()

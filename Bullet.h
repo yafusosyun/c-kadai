@@ -54,4 +54,3 @@ private:
     int P_x;
     int P_y;
 };
-

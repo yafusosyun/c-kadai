@@ -30,6 +30,27 @@ void Bullet::Update()
 		}
 		
 	}
+
+
+		//’e‚Ìflg‚ð300,600,999‚Å•ª‚¯‚ÄƒŠƒZƒbƒg
+		if (i == 300) {
+			for (int j = 600; j < BULLETS_MAX; j++) {
+				bullets[j].flg = 0;
+			}
+		}
+
+
+		if (i == 600) {
+			for (int j = 0; j < 300; j++) {
+				bullets[j].flg = 0;
+			}
+		}
+
+		if (i == 999){
+			for (int j = 300; j < 600; j++) {
+				bullets[j].flg = 0;
+			}
+		}
 }
 
 void Bullet::Draw()const
@@ -40,12 +61,10 @@ void Bullet::Draw()const
 			DrawCircle(bullets[i].x , bullets[i].y, Bullets_radius, 0x000fff, TRUE);
 
 		}
-		DrawFormatString(200,200,0xffffff,"%d", bullets[0].x);
 	}
 
 
-	
-
+	DrawFormatString(200, 200, 0xffffff, "%d", i);
 
 }
 

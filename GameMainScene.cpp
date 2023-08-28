@@ -10,6 +10,8 @@ GamemainScene::GamemainScene()
 {
 	player = new Player();
 	bullet = new Bullet();
+	
+	enemy = new Enemy();
 }
 GamemainScene::~GamemainScene()
 {
@@ -41,4 +43,6 @@ void GamemainScene::Draw()const
 	player->Draw();
 	bullet->Draw();
 	
+	enemy->Draw();
+
 }

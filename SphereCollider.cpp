@@ -2,11 +2,15 @@
 #include <math.h>
 #include "DxLib.h"
 
-int CheckCollision(SphereCollider* spherecollider)
+
+SphereCollider::SphereCollider()
 {
-	return 0;
+	player = new Player();
 }
 
+void SphereCollider::Update()
+{
+}
 void SphereCollider::Draw() const
 {
 }
