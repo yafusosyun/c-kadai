@@ -17,6 +17,8 @@ public:
 
 	void Draw()const override;
 
+	void Hit() override;
+
 	int bulletsX = 0;
 	int bulletsY;
 

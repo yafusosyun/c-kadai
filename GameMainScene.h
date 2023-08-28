@@ -35,5 +35,9 @@ private:
 	Enemy* enemy;
 
 	int bullet_num;
+
+
+	int boxX, boxY;
+
 };
 

@@ -13,7 +13,7 @@ public:
 
 	virtual void Draw()const;
 
-	void Hit();
+virtual void Hit();
 
 	int speed = 2;      // 移動速度
 	int image;      // イメージ

@@ -48,6 +48,10 @@ void Player::Draw()const
 	DrawCircle(x + 2, y,radius, 0xffffff,0);
 }
 
+void Player::Hit()
+{
+}
+
 int Player::GetPositionY()
 {
 	return y;
