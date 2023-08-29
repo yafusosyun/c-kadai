@@ -38,7 +38,7 @@ private:
 
 	int boxX, boxY;
 
-	int time = 10;
+	int time = 30;
 	int fps = 0;
 };
 

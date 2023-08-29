@@ -1,5 +1,5 @@
 #include "Player.h"
-
+#include "PadInput.h"
 
 
 Player::Player()
@@ -16,6 +16,9 @@ Player::~Player()
 
 void Player::Update()
 {
+
+	
+	int PadInput;
 
 	PadInput = GetJoypadInputState(DX_INPUT_KEY_PAD1);
 

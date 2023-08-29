@@ -6,7 +6,6 @@ class Player : public CharaBase
 private:
 
 
-	int PadInput;
 public:
 
 

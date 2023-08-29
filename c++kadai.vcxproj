@@ -29,6 +29,7 @@
     <ClInclude Include="GameRankingScene.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="NwaySpawner.h" />
+    <ClInclude Include="PadInput.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="SceneBase.h" />
     <ClInclude Include="SceneManager.h" />
