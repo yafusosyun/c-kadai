@@ -43,9 +43,6 @@ void Player::Update()
 void Player::Draw()const
 {
 	DrawRotaGraph(x +2, y,0.1,0.0, Player_img, TRUE);
-
-	//デバック用
-	DrawCircle(x + 2, y,radius, 0xffffff,0);
 }
 
 void Player::Hit()

@@ -26,7 +26,7 @@ public:
 	/*int *enemy[3];*/
 	int *bullets[3];
 
-	int a;
+	int count = 0;
 
 private:
 	Player* player;
@@ -36,8 +36,9 @@ private:
 
 	int bullet_num;
 
-
 	int boxX, boxY;
 
+	int time = 10;
+	int fps = 0;
 };
 

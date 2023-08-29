@@ -57,6 +57,15 @@
     <ClInclude Include="Player.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
+    <ClInclude Include="GameClearScene.h">
+      <Filter>シーン</Filter>
+    </ClInclude>
+    <ClInclude Include="GameOverScene.h">
+      <Filter>シーン</Filter>
+    </ClInclude>
+    <ClInclude Include="GameRankingScene.h">
+      <Filter>シーン</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SphereCollider.cpp">
@@ -93,6 +102,15 @@
       <Filter>ソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="GamemainScene.cpp">
+      <Filter>シーン</Filter>
+    </ClCompile>
+    <ClCompile Include="GameClearScene.cpp">
+      <Filter>シーン</Filter>
+    </ClCompile>
+    <ClCompile Include="GameOverScene.cpp">
+      <Filter>シーン</Filter>
+    </ClCompile>
+    <ClCompile Include="GameRankingScene.cpp">
       <Filter>シーン</Filter>
     </ClCompile>
   </ItemGroup>

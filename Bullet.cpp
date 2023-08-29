@@ -7,10 +7,11 @@ Bullet::Bullet(int px,int py)
 	x = px;
 	y = py;
 	radius = 2;
+	speed = 3;
 }
 void Bullet::Update()
 {
-		y = y - 1;
+		y = y - speed;
 }
 
 void Bullet::Draw()const

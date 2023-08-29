@@ -7,7 +7,7 @@ public:
 
 	Enemy();
 
-	int hp;
+	float hp = 60.0f;
 	int point;
 	int weapon;
 	

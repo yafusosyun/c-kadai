@@ -4,7 +4,8 @@
 #include "Bullet.h"
 
 //test
-
+#include "GameClearScene.h"
+#include "GameOverScene.h"
 #include "BulletsSpawner.h"
 GamemainScene::GamemainScene()
 {
@@ -29,13 +30,19 @@ void GamemainScene::SpawnBullet()
 
 SceneBase* GamemainScene::Update()
 {
+	fps++;
+	if (fps % 120 == 0) {
+		time = time - 1;
+	}
 
 	player->Update();
-
-	if (CheckHitKey(KEY_INPUT_S)) {
-		if (bullet[bullet_num] == nullptr) {
-			bullet[bullet_num] = new Bullet(player->GetPositionX(), player->GetPositionY());
-			bullet_num = bullet_num + 1;
+	count = count + 1;
+	if (count % 10 == 0) {
+		if (CheckHitKey(KEY_INPUT_S)) {
+			if (bullet[bullet_num] == nullptr) {
+				bullet[bullet_num] = new Bullet(player->GetPositionX(), player->GetPositionY());
+				bullet_num = bullet_num + 1;
+			}
 		}
 	}
 	if (bullet_num == BULLETS_MAX) {
@@ -54,8 +61,11 @@ SceneBase* GamemainScene::Update()
 				printfDx("HIT");
 			}*/
 			if (bullet[i]->CheckCollision(enemy) == true) {
-				printfDx("HIT");
+					enemy->hp = enemy->hp - 0.1;
 		}
+			if (enemy->hp <= 0) {
+				enemy->hp = 0;
+			}
 			}
 		}
 	if (enemy->CheckCollision(player) == true) {
@@ -64,14 +74,19 @@ SceneBase* GamemainScene::Update()
 	
 	enemy->Update();
 
+	//ìGÇÃHPÇ™0Ç…Ç»ÇÈÇ∆ÉQÅ[ÉÄÉNÉäÉAÇ÷
+	if (enemy->hp <= 0) {
+		return new GameClearScene();
+	}
 
-
+	if (time <= 0) {
+		return new GameOverScene();
+	}
 	return this;
 }
 
 void GamemainScene::Draw()const
 {
-	DrawFormatString(0, 0, 0xffffff, "GAMEMAIN");
 	player->Draw();
 
 	for (int i = 0; i < BULLETS_MAX; i++) {
@@ -81,5 +96,10 @@ void GamemainScene::Draw()const
 	}
 	enemy->Draw();
 
-	//DrawBox()
+	DrawBox(enemy->x, enemy->y + 70, enemy->x + enemy->hp , enemy->y + 80, 0xfff000, TRUE);
+
+	SetFontSize(30);
+	DrawFormatString(1150, 600, 0xffffff, "êßå¿éûä‘");
+	SetFontSize(50);
+	DrawFormatString(1180, 650, 0xffffff, "%d", time);
 }
