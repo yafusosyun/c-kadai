@@ -81,5 +81,5 @@ void GamemainScene::Draw()const
 	}
 	enemy->Draw();
 
-	DrawBox()
+	//DrawBox()
 }
