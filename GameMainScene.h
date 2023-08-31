@@ -40,5 +40,7 @@ private:
 
 	int time = 30;
 	int fps = 0;
+
+	int PadInput;
 };
 

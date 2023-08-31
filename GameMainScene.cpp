@@ -30,6 +30,11 @@ void GamemainScene::SpawnBullet()
 
 SceneBase* GamemainScene::Update()
 {
+	PadInput = GetJoypadInputState(DX_INPUT_KEY_PAD1);
+
+	
+
+
 	fps++;
 	if (fps % 120 == 0) {
 		time = time - 1;
@@ -38,7 +43,7 @@ SceneBase* GamemainScene::Update()
 	player->Update();
 	count = count + 1;
 	if (count % 10 == 0) {
-		if (CheckHitKey(KEY_INPUT_S)) {
+		if (CheckHitKey(KEY_INPUT_S) || (PadInput & PAD_INPUT_1) == 1) {
 			if (bullet[bullet_num] == nullptr) {
 				bullet[bullet_num] = new Bullet(player->GetPositionX(), player->GetPositionY());
 				bullet_num = bullet_num + 1;
