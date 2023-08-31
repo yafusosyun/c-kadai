@@ -1,7 +1,7 @@
 #include "TitleScene.h"
 #include "GameMainScene.h"
 #include "DxLib.h"
-#include "GameRankingScene.h"
+
 SceneBase* TitleScene::Update()
 {
 	//メニューカーソル移動処理
@@ -16,7 +16,7 @@ SceneBase* TitleScene::Update()
 	// Ｚキーでメニュー選択
 	if (g_KeyFlg & PAD_INPUT_A) {
 		if (g_MenuNumber == 0) {
-			return new GameRankingScene();
+			return new GamemainScene();
 		}
 	
 	}
