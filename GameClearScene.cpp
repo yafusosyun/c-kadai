@@ -9,7 +9,7 @@ SceneBase* GameClearScene::Update()
 
 	PadInput = GetJoypadInputState(DX_INPUT_PAD1);
 
-	if ((PadInput & PAD_INPUT_LEFT) == 1) {
+	if ((PadInput & PAD_INPUT_A) == 1) {
 		return new GameRankingScene();
 	}
 	return this;

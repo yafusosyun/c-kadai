@@ -28,6 +28,8 @@ public:
 
 	int count = 0;
 
+	int time = 30;
+
 private:
 	Player* player;
 	Bullet* bullet[BULLETS_MAX];
@@ -38,7 +40,7 @@ private:
 
 	int boxX, boxY;
 
-	int time = 30;
+
 	int fps = 0;
 
 	int PadInput;

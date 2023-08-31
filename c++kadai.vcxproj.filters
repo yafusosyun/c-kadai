@@ -66,6 +66,9 @@
     <ClInclude Include="GameRankingScene.h">
       <Filter>シーン</Filter>
     </ClInclude>
+    <ClInclude Include="DrawRankingScene.h">
+      <Filter>シーン</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SphereCollider.cpp">
@@ -111,6 +114,9 @@
       <Filter>シーン</Filter>
     </ClCompile>
     <ClCompile Include="GameRankingScene.cpp">
+      <Filter>シーン</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawRankingScene.cpp">
       <Filter>シーン</Filter>
     </ClCompile>
   </ItemGroup>
