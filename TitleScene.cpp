@@ -28,6 +28,5 @@ void TitleScene::Draw() const
 	//// メニューカーソル（三角形）の表示
 	DrawTriangle(940, 540, 960, 560, 940, 580, GetColor(255, 0, 0), TRUE);
 
-	SetFontSize(40);
-	DrawFormatString(5, 430, GetColor(255, 255, 255), "*Zキーで選択");
+	
 }
