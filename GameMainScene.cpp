@@ -64,7 +64,7 @@ SceneBase* GamemainScene::Update()
 				printfDx("HIT");
 			}*/
 			if (bullet[i]->CheckCollision(enemy) == true) {
-					enemy->hp = enemy->hp - 0.01;
+					enemy->hp = enemy->hp - 0.1;
 		}
 			if (enemy->hp <= 0) {
 				enemy->hp = 0;
