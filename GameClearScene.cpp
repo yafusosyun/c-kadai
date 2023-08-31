@@ -1,17 +1,19 @@
 #include "GameClearScene.h"
 #include "DxLib.h"
-#include "GameRankingScene.h"
+
 SceneBase* GameClearScene::Update()
 {
 	int PadInput;
+
+	
 
 	PadInput = GetJoypadInputState(DX_INPUT_KEY_PAD1);
 
 	PadInput = GetJoypadInputState(DX_INPUT_PAD1);
 
-	if ((PadInput & PAD_INPUT_A) == 1) {
-		return new GameRankingScene();
-	}
+	//if ((PadInput & PAD_INPUT_A) == 1) {
+	//	return new GameRankingScene();
+	//}
 	return this;
 }
 

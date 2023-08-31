@@ -44,5 +44,11 @@ private:
 	int fps = 0;
 
 	int PadInput;
+
+	int g_OldKey;
+	int g_NowKey;
+	int g_KeyFlg;
+
 };
+
 

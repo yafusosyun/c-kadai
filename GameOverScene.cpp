@@ -7,5 +7,6 @@ SceneBase* GameOverScene::Update()
 
 void GameOverScene::Draw() const
 {
-	DrawFormatString(0, 0, 0xffffff, "GAMEOVER");
+	SetFontSize(100);
+	DrawFormatString(600, 300, 0xffffff, "GAMEOVER");
 }

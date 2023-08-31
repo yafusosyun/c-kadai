@@ -22,12 +22,10 @@
     <ClInclude Include="Bullet.h" />
     <ClInclude Include="BulletsSpawner.h" />
     <ClInclude Include="CharaBase.h" />
-    <ClInclude Include="DrawRankingScene.h" />
     <ClInclude Include="Enemy.h" />
     <ClInclude Include="GameClearScene.h" />
     <ClInclude Include="GamemainScene.h" />
     <ClInclude Include="GameOverScene.h" />
-    <ClInclude Include="GameRankingScene.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="NwaySpawner.h" />
     <ClInclude Include="Player.h" />
@@ -40,12 +38,10 @@
     <ClCompile Include="Bullet.cpp" />
     <ClCompile Include="BulletsSpawner.cpp" />
     <ClCompile Include="CharaBase.cpp" />
-    <ClCompile Include="DrawRankingScene.cpp" />
     <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="GameClearScene.cpp" />
     <ClCompile Include="GamemainScene.cpp" />
     <ClCompile Include="GameOverScene.cpp" />
-    <ClCompile Include="GameRankingScene.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="NwaySpawner.cpp" />
     <ClCompile Include="Player.cpp" />
