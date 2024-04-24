@@ -42,10 +42,7 @@ SceneBase* GamemainScene::Update()
 	count = count + 1;
 	if (count % 10 == 0) {
 		if ( PAD_INPUT_A) {
-			if (bullet[bullet_num] == nullptr) {
-				bullet[bullet_num] = new Bullet(player->GetPositionX(), player->GetPositionY());
-				bullet_num = bullet_num + 1;
-			}
+			
 		}
 	}
 	if (bullet_num == BULLETS_MAX) {
@@ -59,7 +56,7 @@ SceneBase* GamemainScene::Update()
 			bullet[i]->Update();
 			player->CheckCollision(bullet[i]);
 
-			//player‚Æbullet‚Ì”»’è
+			//playerï¿½ï¿½bulletï¿½Ì”ï¿½ï¿½ï¿½
 		/*	if (player->CheckCollision(bullet[i]) == true) {
 				printfDx("HIT");
 			}*/
@@ -77,7 +74,7 @@ SceneBase* GamemainScene::Update()
 	
 	enemy->Update();
 
-	//“G‚ÌHP‚ª0‚É‚È‚é‚ÆƒQ[ƒ€ƒNƒŠƒA‚Ö
+	//ï¿½Gï¿½ï¿½HPï¿½ï¿½0ï¿½É‚È‚ï¿½ÆƒQï¿½[ï¿½ï¿½ï¿½Nï¿½ï¿½ï¿½Aï¿½ï¿½
 	if (enemy->hp <= 0) {
 		return new GameClearScene();
 	}
@@ -102,7 +99,7 @@ void GamemainScene::Draw()const
 	DrawBox(enemy->x, enemy->y + 70, enemy->x + enemy->hp , enemy->y + 80, 0xfff000, TRUE);
 
 	SetFontSize(30);
-	DrawFormatString(1150, 600, 0xffffff, "§ŒÀŠÔ");
+	DrawFormatString(1150, 600, 0xffffff, "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 	SetFontSize(50);
 	DrawFormatString(1180, 650, 0xffffff, "%d", time);
 }

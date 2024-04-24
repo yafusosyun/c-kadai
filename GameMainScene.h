@@ -14,7 +14,7 @@ public:
 	~GamemainScene();
 	void HitCheck();
 
-	void SpawnBullet();//’e‚Ì”z—ñ‚ÉV‚µ‚­ƒf[ƒ^‚ğì¬‚·‚é
+	void SpawnBullet();//ï¿½eï¿½Ì”zï¿½ï¿½ÉVï¿½ï¿½ï¿½ï¿½ï¿½fï¿½[ï¿½^ï¿½ï¿½ì¬ï¿½ï¿½ï¿½ï¿½
 
 
 	 SceneBase* Update() override;
